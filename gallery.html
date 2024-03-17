@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fonts, Position Property</title>
+
+	<link rel="stylesheet" href="shared.css">
+	<style>
+		#header{
+			text-align: center;
+            background-image: url('img/gallery.png');
+            height: 80px;
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            font-size: 3em;
+			text-align: center;
+			line-height: 80px;
+			text-shadow: 0px 0px 10px #000;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1000; 
+		}
+		#navbar{
+			margin-top: 80px;
+			
+		}
+		#main{
+			/* margin-top: 100px;  */
+			width: 900px;
+			padding: 10px;
+			margin-left: auto;
+    		margin-right: auto;
+		}
+		#thumbnail{
+			margin-top: 100px;
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			background-color: rgb(168, 197, 187);
+			position: relative;
+		}
+		
+		.image-container{
+			background-color: rgb(168, 197, 187);
+			border: 2px solid #FFF; /* Add border */
+			box-sizing: border-box; /* Include padding and border in the element's total width and height */
+			/* padding: 10px; */
+			width: 0;
+			height: 0;
+			margin: 10px;
+			overflow: hidden;
+			position: absolute;
+		}
+		.image-container:nth-child(1) {
+			top: 20px;
+			left: 110px;
+			width: 240px;
+			height: 180px;
+		}
+
+		.image-container:nth-child(2) {
+			top: 200px;
+			left: 200px;
+			width: 160px;
+			height: 220px;
+		}
+
+		.image-container:nth-child(3) {
+			top: -10px;
+			left: 350px;
+			height: 150px;
+			width: 150px;
+		}
+
+		.image-container:nth-child(4) {
+			top: 140px;
+			left: 350px;
+			height: 150px;
+			width: 150px;
+		}
+
+		.image-container:nth-child(5) {
+			top: 50px;
+			left: 500px;
+			height: 240px;
+			width: 180px;
+		}
+
+		.image-container:nth-child(6) {
+			top: 290px;
+			left: 350px;
+			height: 200px;
+			width: 200px;
+		}
+
+		.image-container:nth-child(7) {
+			top: 290px;
+			left: 550px;
+			height: 100px;
+			width: 170px;
+		}
+
+		.image-container:nth-child(8) {
+			top: 140px;
+			left: 680px;
+			height: 150px;
+			width: 100px;
+		}
+
+		.image-container:nth-child(9) {
+			top: 390px;
+			left: 550px;
+			height: 200px;
+			width: auto;
+		}
+
+		.image-container:nth-child(10) {
+			top: 420px;
+			left: 210px;
+			width: 140px;
+			height: 200px;
+		}
+
+		.image-container:nth-child(11) {
+			top: 490px;
+			left: 350px;
+			width: 200px;
+			height: 120px;
+		}
+
+		.image-container > img{
+			width: auto;
+			height: 100%;
+		}
+		.image-container .width-100{
+			width: 100%;
+			height: auto;
+		}
+		.overlay{
+			color: white;
+			/* background-color: black; */
+			background-color: rgba(0,0,0,0.6);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 5px;
+			right: 5px;
+			text-align: center;
+			padding-top: 70px;
+			/* opacity: 0.6; */
+			visibility: hidden;
+			text-wrap: wrap;
+			
+		}
+		
+		.image-container:hover .overlay{
+			visibility: visible;
+		}
+		#footer {
+			position: relative;
+			margin-top: 700px; 
+			width: 100%;
+		}
+
+		
+	</style>
+
+</head>
+<body id="page">
+	<h1 id="header">Gallery</h1>
+	<ul id="navbar">
+
+		<li><a href="interests.html">Main</a>
+			<ul>
+				<li><a href="interests.html#sketching">Sketching</a></li>
+				<li><a href="interests.html#painting">Painting</a></li>
+				<li><a href="interests.html#pottery">Pottery</a></li>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="gallery.html" id="active-menu">Gallery</a>
+		</li>
+		
+	</ul> <!-- navbar -->
+
+	<div id="main">
+
+		<div id="thumbnail">
+			<div class="image-container">
+				<img src="img/pot-3.avif" alt="wheel">
+				<div class="overlay">
+					person making pottery
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/paint-2.jpeg" alt="painting">
+				<div class="overlay">
+					Workers shaping metal
+				</div>
+			</div>
+			<div class="image-container">
+				<img class="width-100" src="img/sketch-2.jpeg" alt="sketch">
+				<div class="overlay">
+					Tourist photgraphing a guard
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/sketch-3.jpeg" alt="tools">
+				<div class="overlay">
+					charcoal art tools
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/pot.jpeg" alt="clay">
+				<div class="overlay">
+					clay work from western india
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/sketch-1.jpeg" alt="man">
+				<div class="overlay">
+					man riding bicycle
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/pot-2.jpeg" alt="pots">
+				<div class="overlay">
+					Black clay pottery
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/paint-3.jpeg" alt="paint brushes">
+				<div class="overlay">
+					paint brushes
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/paint-1.avif" alt="woman">
+				<div class="overlay">
+					woman reading book
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/pot-4.jpeg" alt="carving">
+				<div class="overlay">
+					pottery being carved
+				</div>
+			</div>
+			<div class="image-container">
+				<img src="img/studio.webp" alt="studio">
+				<div class="overlay">
+					an art studio
+				</div>
+			</div>
+		</div> <!-- thumbnail -->
+	</div> <!-- #main -->
+	<div id="footer">
+        <h2 id="font">There is beauty in creation</h2>
+    </div>
+</body>
+</html>

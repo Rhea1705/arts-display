@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interest</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        #header{
+            text-align: center;
+            background-image: url('img/studio.webp');
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            font-size: 5em;
+            text-align: center;
+            line-height: 500px;
+            text-shadow: 0px 0px 10px #000;
+            
+        }
+        /* #navbar{
+            margin-top: 500px;
+		} */
+        #pageWrapper{
+            display: flex;
+            justify-content: center;
+            height: auto;
+        }
+        #main{
+            /* margin-top: 50px ; */
+            width: 600px;
+            padding: 10px;
+            border-left: 1px solid black;
+			border-right: 1px solid black; 
+            background-color: rgb(246, 239, 230);
+        }
+        #sidebar{
+            margin-top: 50px;
+            width: 300px;
+            padding: 10px;
+            border-right: 1px solid black;
+            background-color: rgb(245, 237, 220);
+        }
+        .thumbnail{
+            width: 270px;
+            height: auto;
+        }
+        .images{
+            float: left;
+            width: 170px;
+            height: auto;
+            padding-right: 10px;
+        }
+        .image{
+            float:right;
+            width: 170px;
+            height: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        p{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        h3{
+            color: rgb(138, 55, 55);
+        }
+        .img-container > p{
+			text-align: center;
+			/* display: none; */
+            padding-top: 0px;
+			visibility: hidden;
+		}
+		.img-container:hover > p{
+            padding-top: 0px;
+			display: block;
+			visibility: visible;
+		}
+        #space{
+            height: 50px;
+        }
+        #footer {
+			background-color: rgb(138, 55, 55);
+			color: #FFF;
+			text-align: center;
+            word-spacing: 20px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 0.8em;
+		}
+
+    </style>
+</head>
+<body id="page">
+    <h1 id="header">Art</h1>
+
+	<ul id="navbar">
+
+		<li><a id="active-menu" href="interests.html">Main</a>
+			<ul>
+				<li><a href="#sketching">Sketching</a></li>
+				<li><a href="#painting">Painting</a></li>
+				<li><a href="#pottery">Pottery</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="gallery.html">Gallery</a>
+		</li>
+		
+	</ul> <!-- navbar -->
+
+    <div id="pageWrapper">
+        <div id="main">
+            <h2>Art forms I practice</h2>
+            <h3 id="sketching">SKETCHING</h3>
+            <img class="images" src="img/sketch-3.jpeg" alt="charcoal">
+            <p>Sketching is a fundamental skill in the world of art, serving as a versatile tool for artists to express ideas, plan compositions, or capture a moment with simplicity. It's a form of drawing that is typically done quickly and with less detail than a finished work. Sketches are often made using pencil, charcoal, or ink, but can also include other mediums.</p>
+            <p>The beauty of sketching lies in its spontaneity and the freedom it offers, allowing artists to experiment with shapes, lines, and forms.</p>
+            
+            <h3 id="painting">PAINTING</h3>
+            <img class="images" src="img/paint-3.jpeg" alt="brushes">
+            <p>Painting is a revered and ancient form of artistic expression, dating back tens of thousands of years to the earliest cave paintings. It involves applying pigment to a surface, such as paper, canvas, wood, glass, or walls, using various tools like brushes, knives, or even fingers. This art form allows for a vast range of techniques and styles, from the realistic and detailed to the abstract and expressive. Paintings can be created using a variety of mediums, including oils, acrylics, watercolors, and pastels, each offering unique textures and effects.</p> 
+            <p>Beyond its aesthetic value, painting is often used to convey emotions, tell stories, or capture the artist's perspective of the world. It's a deeply personal practice that can provide both a creative outlet and a means of communication, connecting artists with viewers across different cultures and time periods.</p>
+            
+            <h3 id="pottery">POTTERY</h3>
+            <img class="images" src="img/pot-3.avif" alt="pot">
+            <p>Pottery, one of the oldest human inventions, is the craft of forming objects with clay and other ceramic materials, which are then fired at high temperatures to give them a hard, durable form. This art form combines functionality with aesthetic beauty, ranging from tableware and vases to decorative sculptures.</p> 
+            <img class="image" src="img/pot-4.jpeg" alt="pot">
+            <p>The process of pottery involves several stages, including clay preparation, shaping, drying, and firing. Techniques vary widely, with some potters using a wheel to shape their work, while others prefer hand-building methods like coiling and pinching. Glazes and paints are often applied to add color and finish to the pieces.</p> 
+            <p>Pottery is not just an artistic endeavor but also a deeply cultural one, often reflecting the traditions and heritage of the people who make it. It's a tactile and meditative process that connects the artist to the earthy medium of clay, offering a unique blend of creative expression and practical craftsmanship.</p>
+
+        </div>
+        <div id="sidebar">
+            <h2>some inspiring pieces</h2>
+            <div class="img-container">
+                <img class="thumbnail" src="img/sketch-1.jpeg" alt="man">
+                <p>Man on cycle</p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="img/sketch-2.jpeg" alt="tourists">
+                <p>Tourist photgraphing a guard</p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="img/paint-1.avif" alt="girl">
+                <p>Girl reading</p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="img/paint-2.jpeg" alt="countryside">
+                <p>Workers shaping metal</p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="img/pot.jpeg" alt="clay">
+                <p>Clay craft of western India </p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="img/pot-2.jpeg" alt="pots">
+                <p>Black clay pottery</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h2>There is beauty in creation</h2>
+    </div>
+</body>
+</html>
+
